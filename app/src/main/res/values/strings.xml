@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">Calculadora</string>
+    <string name="app_name">Calculator</string>
+    <string name="c">C</string>
+    <string name="divide_sign">/</string>
+    <string name="product_sign">*</string>
+    <string name="number_seven">7</string>
+    <string name="number_eight">8</string>
+    <string name="number_nine">9</string>
 </resources>

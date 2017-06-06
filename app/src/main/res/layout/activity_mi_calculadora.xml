@@ -3,252 +3,252 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.pedrogonzalez.calculadora.MiCalculadora">
+    tools:context="com.example.pedrogonzalez.calculadora.MiCalculator">
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="170dp"
+        android:layout_height="170sp"
         android:ellipsize="end"
         android:gravity="right"
-        android:textSize="45dp"
+        android:textSize="45sp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/pantalla"
+        android:id="@+id/my_screen"
         android:background="@android:color/white"
         />
 
     <Button
-        android:layout_width="92.5dp"
-        android:layout_height="70dp"
-        android:id="@+id/btborrar"
-        android:textSize="32dp"
-        android:text="C"
-        android:layout_below="@id/pantalla"
-        android:layout_toRightOf="@+id/btnueve"
-        android:layout_toEndOf="@+id/btnueve"
+        android:layout_width="92.5sp"
+        android:layout_height="70sp"
+        android:id="@+id/my_eraser"
+        android:textSize="32sp"
+        android:text="@string/c"
+        android:layout_below="@id/my_screen"
+        android:layout_toRightOf="@+id/my_nine"
+        android:layout_toEndOf="@+id/my_nine"
         android:background="@color/colorAccent"
-        android:textColor="@color/colorTxt"/>
+        android:textColor="@color/color_numbers"/>
 
     <Button
-        android:layout_width="92.5dp"
-        android:layout_height="70dp"
-        android:id="@+id/btdiv"
-        android:textSize="32dp"
-        android:text="/"
-        android:layout_below="@id/btborrar"
-        android:layout_toRightOf="@+id/btseis"
-        android:layout_toEndOf="@+id/btseis"
-        android:background="@color/colorFondoBt"
-        android:textColor="@color/colorTxt"/>
+        android:layout_width="92.5sp"
+        android:layout_height="70sp"
+        android:id="@+id/my_divide"
+        android:textSize="32sp"
+        android:text="@string/divide_sign"
+        android:layout_below="@id/my_eraser"
+        android:layout_toRightOf="@+id/my_six"
+        android:layout_toEndOf="@+id/my_six"
+        android:background="@color/color_my_background"
+        android:textColor="@color/colorAccent"/>
 
 
     <Button
-        android:layout_width="92.5dp"
+        android:layout_width="92.5sp"
         android:layout_height="70dp"
-        android:id="@+id/btmult"
-        android:textSize="32dp"
-        android:text="*"
-        android:layout_below="@id/btdiv"
-        android:layout_toRightOf="@+id/bttres"
-        android:layout_toEndOf="@+id/bttres"
-        android:background="@color/colorFondoBt"
-        android:textColor="@color/colorTxt"/>
+        android:id="@+id/my_product"
+        android:textSize="32sp"
+        android:text="@string/product_sign"
+        android:layout_below="@id/my_divide"
+        android:layout_toRightOf="@+id/my_three"
+        android:layout_toEndOf="@+id/my_three"
+        android:background="@color/color_my_background"
+        android:textColor="@color/colorAccent"/>
 
     <Button
         android:layout_width="88.5dp"
         android:layout_height="80dp"
-        android:id="@+id/btsiete"
-        android:textSize="32dp"
-        android:text="7"
-        android:layout_below="@+id/pantalla"
+        android:id="@+id/my_seven"
+        android:textSize="32sp"
+        android:text="@string/number_seven"
+        android:layout_below="@+id/my_screen"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginLeft="2dp"
-        android:background="@color/colornumericos"
-        android:textColor="@color/colorTxt"
+        android:background="@color/color_numbers"
+        android:textColor="@color/color_my_background"
         />
 
     <Button
-        android:layout_width="88.5dp"
-        android:layout_height="80dp"
-        android:id="@+id/btocho"
-        android:textSize="32dp"
-        android:text="8"
-        android:layout_below="@+id/pantalla"
-        android:layout_toRightOf="@+id/btsiete"
-        android:layout_toEndOf="@+id/btsiete"
-        android:background="@color/colornumericos"
-        android:textColor="@color/colorTxt"/>
+        android:layout_width="88.5sp"
+        android:layout_height="80sp"
+        android:id="@+id/my_eight"
+        android:textSize="32sp"
+        android:text="@string/number_eight"
+        android:layout_below="@+id/my_screen"
+        android:layout_toRightOf="@+id/my_seven"
+        android:layout_toEndOf="@+id/my_seven"
+        android:background="@color/color_numbers"
+        android:textColor="@color/color_my_background"/>
 
     <Button
-        android:layout_width="88.5dp"
-        android:layout_height="80dp"
-        android:id="@+id/btnueve"
-        android:textSize="32dp"
-        android:text="9"
-        android:layout_below="@+id/pantalla"
-        android:layout_toRightOf="@+id/btocho"
-        android:layout_toEndOf="@+id/btocho"
-        android:background="@color/colornumericos"
-        android:textColor="@color/colorTxt"/>
+        android:layout_width="88.5sp"
+        android:layout_height="80sp"
+        android:id="@+id/my_nine"
+        android:textSize="32sp"
+        android:text="@string/number_nine"
+        android:layout_below="@+id/my_screen"
+        android:layout_toRightOf="@+id/my_eight"
+        android:layout_toEndOf="@+id/my_eight"
+        android:background="@color/color_numbers"
+        android:textColor="@color/color_my_background"/>
 
     <Button
         android:layout_width="92.5dp"
         android:layout_height="70dp"
-        android:id="@+id/btmenos"
+        android:id="@+id/my_minus"
         android:textSize="32dp"
         android:text="-"
-        android:layout_below="@+id/btmult"
-        android:layout_toRightOf="@+id/bttres"
-        android:layout_toEndOf="@+id/bttres"
-        android:background="@color/colorFondoBt"
-        android:textColor="@color/colorTxt"/>
+        android:layout_below="@+id/my_product"
+        android:layout_toRightOf="@+id/my_three"
+        android:layout_toEndOf="@+id/my_three"
+        android:background="@color/color_my_background"
+        android:textColor="@color/colorAccent"/>
 
     <Button
         android:layout_width="88.5dp"
         android:layout_height="80dp"
-        android:id="@+id/btcuatro"
+        android:id="@+id/my_four"
         android:textSize="32dp"
         android:text="4"
-        android:layout_below="@+id/btsiete"
+        android:layout_below="@+id/my_seven"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginLeft="2dp"
-        android:background="@color/colornumericos"
-        android:textColor="@color/colorTxt"/>
+        android:background="@color/color_numbers"
+        android:textColor="@color/color_my_background"/>
 
     <Button
         android:layout_width="88.5dp"
         android:layout_height="80dp"
-        android:id="@+id/btcinco"
+        android:id="@+id/my_five"
         android:textSize="32dp"
         android:text="5"
-        android:layout_below="@+id/btocho"
-        android:layout_toRightOf="@+id/btcuatro"
-        android:layout_toEndOf="@+id/btcuatro"
-        android:background="@color/colornumericos"
-        android:textColor="@color/colorTxt"/>
+        android:layout_below="@+id/my_eight"
+        android:layout_toRightOf="@+id/my_four"
+        android:layout_toEndOf="@+id/my_four"
+        android:background="@color/color_numbers"
+        android:textColor="@color/color_my_background"/>
 
     <Button
         android:layout_width="88.5dp"
         android:layout_height="80dp"
-        android:id="@+id/btseis"
+        android:id="@+id/my_six"
         android:textSize="32dp"
         android:text="6"
-        android:layout_below="@+id/btnueve"
-        android:layout_toRightOf="@+id/btcinco"
-        android:layout_toEndOf="@+id/btcinco"
-        android:background="@color/colornumericos"
-        android:textColor="@color/colorTxt"/>
+        android:layout_below="@+id/my_nine"
+        android:layout_toRightOf="@+id/my_five"
+        android:layout_toEndOf="@+id/my_five"
+        android:background="@color/color_numbers"
+        android:textColor="@color/color_my_background"/>
 
     <Button
         android:layout_width="92.5dp"
         android:layout_height="111dp"
-        android:id="@+id/btmas"
+        android:id="@+id/my_plus"
         android:textSize="32dp"
         android:text="+"
-        android:layout_below="@+id/btmenos"
-        android:layout_toRightOf="@+id/btsigno"
-        android:layout_toEndOf="@+id/btsigno"
-        android:background="@color/colorFondoBt"
-        android:textColor="@color/colorTxt"/>
+        android:layout_below="@+id/my_minus"
+        android:layout_toRightOf="@+id/my_sign"
+        android:layout_toEndOf="@+id/my_sign"
+        android:background="@color/color_my_background"
+        android:textColor="@color/colorAccent"/>
 
     <Button
         android:layout_width="88.5dp"
         android:layout_height="80dp"
-        android:id="@+id/btuno"
+        android:id="@+id/my_one"
         android:textSize="32dp"
         android:text="1"
-        android:layout_below="@+id/btcuatro"
+        android:layout_below="@+id/my_four"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginLeft="2dp"
-        android:background="@color/colornumericos"
-        android:textColor="@color/colorTxt"/>
+        android:background="@color/color_numbers"
+        android:textColor="@color/color_my_background"/>
 
     <Button
         android:layout_width="88.5dp"
         android:layout_height="80dp"
-        android:id="@+id/btdos"
+        android:id="@+id/my_two"
         android:textSize="32dp"
         android:text="2"
-        android:layout_below="@+id/btcinco"
-        android:layout_toRightOf="@+id/btuno"
-        android:layout_toEndOf="@+id/btuno"
-        android:background="@color/colornumericos"
-        android:textColor="@color/colorTxt"/>
+        android:layout_below="@+id/my_five"
+        android:layout_toRightOf="@+id/my_one"
+        android:layout_toEndOf="@+id/my_one"
+        android:background="@color/color_numbers"
+        android:textColor="@color/color_my_background"/>
 
     <Button
         android:layout_width="88.5dp"
         android:layout_height="80dp"
-        android:id="@+id/bttres"
+        android:id="@+id/my_three"
         android:textSize="32dp"
         android:text="3"
-        android:layout_below="@+id/btseis"
-        android:layout_toRightOf="@+id/btdos"
-        android:layout_toEndOf="@+id/btdos"
-        android:background="@color/colornumericos"
-        android:textColor="@color/colorTxt"/>
+        android:layout_below="@+id/my_six"
+        android:layout_toRightOf="@+id/my_two"
+        android:layout_toEndOf="@+id/my_two"
+        android:background="@color/color_numbers"
+        android:textColor="@color/color_my_background"/>
 
     <Button
         android:layout_width="88.5dp"
         android:layout_height="80dp"
-        android:id="@+id/btcero"
+        android:id="@+id/my_zero"
         android:textSize="32dp"
         android:text="0"
-        android:layout_below="@+id/btuno"
+        android:layout_below="@+id/my_one"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginLeft="2dp"
-        android:background="@color/colornumericos"
-        android:textColor="@color/colorTxt"/>
+        android:background="@color/color_numbers"
+        android:textColor="@color/color_my_background"/>
 
     <Button
         android:layout_width="88.5dp"
         android:layout_height="80dp"
-        android:id="@+id/btpunto"
+        android:id="@+id/my_point"
         android:textSize="32dp"
         android:text="."
-        android:layout_below="@+id/btdos"
-        android:layout_toRightOf="@+id/btcero"
-        android:layout_toEndOf="@+id/btcero"
-        android:background="@color/colornumericos"
-        android:textColor="@color/colorTxt"/>
+        android:layout_below="@+id/my_two"
+        android:layout_toRightOf="@+id/my_zero"
+        android:layout_toEndOf="@+id/my_zero"
+        android:background="@color/color_numbers"
+        android:textColor="@color/color_my_background"/>
 
     <Button
         android:layout_width="88.5dp"
         android:layout_height="80dp"
-        android:id="@+id/btsigno"
+        android:id="@+id/my_sign"
         android:textSize="32dp"
         android:text="+/-"
-        android:layout_below="@+id/bttres"
-        android:layout_toRightOf="@+id/btpunto"
-        android:layout_toEndOf="@+id/btpunto"
-        android:background="@color/colornumericos"
-        android:textColor="@color/colorTxt"/>
+        android:layout_below="@+id/my_three"
+        android:layout_toRightOf="@+id/my_point"
+        android:layout_toEndOf="@+id/my_point"
+        android:background="@color/color_numbers"
+        android:textColor="@color/color_my_background"/>
 
     <Button
         android:layout_width="95.5dp"
         android:layout_height="70dp"
-        android:id="@+id/btigual"
+        android:id="@+id/my_equals"
         android:textSize="32dp"
         android:text="="
-        android:layout_below="@+id/btsigno"
-        android:layout_toRightOf="@+id/bthistorial"
-        android:layout_toEndOf="@+id/bthistorial"
-        android:background="@color/colorFondoBt"
-        android:textColor="@color/colorTxt"/>
+        android:layout_below="@+id/my_sign"
+        android:layout_toRightOf="@+id/my_history"
+        android:layout_toEndOf="@+id/my_history"
+        android:background="@color/color_my_background"
+        android:textColor="@color/colorAccent"/>
 
     <Button
         android:layout_width="177dp"
         android:layout_height="70dp"
-        android:id="@+id/bthistorial"
+        android:id="@+id/my_history"
         android:textSize="18dp"
         android:text="Historial"
-        android:layout_below="@+id/btcero"
+        android:layout_below="@+id/my_zero"
         android:layout_alignParentLeft="true"
         android:background="@color/colorHisto"
-        android:textColor="@color/colorTxt"
+        android:textColor="@color/color_numbers"
         />
 
 </RelativeLayout>

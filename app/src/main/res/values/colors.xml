@@ -3,8 +3,10 @@
     <color name="colorPrimary">#476eec</color>
     <color name="colorPrimaryDark">#262828</color>
     <color name="colorAccent">#f2ff4043</color>
-    <color name="colorFondoBt">#262828</color>
+    <color name="color_my_background">#262828</color>
     <color name="colorTxt">#9b9797</color>
     <color name="colorHisto">#f2ff4043</color>
-    <color name="colornumericos">#476eec</color>
+    <color name="colorNumericos">#69d90e</color>
+    <color name="color_numbers">#476eec</color>
+    <color name="colorOperador">#476eec</color>
 </resources>
